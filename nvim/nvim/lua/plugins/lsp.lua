@@ -8,7 +8,7 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
 
 local function on_attach()
    vim.keymap.set("n", "<C-space>", vim.lsp.buf.hover, { buffer = 0 })
-   vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = 0 })
+   vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = 1 })
    vim.keymap.set("n", "<Leader>rn", vim.lsp.buf.rename, { buffer = 0 })
    vim.keymap.set("n", "gs", "<cmd>lua vim.lsp.buf.signature_help()<cr>", { buffer = 0 })
 end
@@ -42,7 +42,6 @@ return {
 
          vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
             vim.lsp.diagnostic.on_publish_diagnostics, {
-               virtual_text = true
             }
          )
       end
