@@ -8,7 +8,7 @@ return {
          vim.keymap.set("n", "ff", builtin.find_files, { noremap = true })
          vim.keymap.set("n", "fb", builtin.buffers, { noremap = true })
          vim.keymap.set("n", "fh", builtin.help_tags, { noremap = true })
-         vim.keymap.set("n", "<C-f>", builtin.live_grep, { noremap = true })
+         vim.keymap.set("n", "fl", builtin.live_grep, { noremap = true })
 
          local telescope = require('telescope')
          telescope.setup({

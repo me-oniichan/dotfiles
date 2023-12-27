@@ -149,8 +149,10 @@
       "format": "{temperatureC}°C "
   },
     "bluetooth": {
-        "interval": 5,
+        "format" : "",
         "format-disabled": "",
+        "format-off": "",
+        "format-on": " on",
         "format-connected": "",
         "format-connected-battery": " {device_battery_percentage}%",
         "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
