@@ -37,5 +37,11 @@ return {
             received_contests_directory = "$(CWD)/Competitive Programming/$(JUDGE)/$(CONTEST)"
        },
        init = function() require('competitest').setup() end,
+   },
+   {
+       'mattn/emmet-vim',
+        config = function ()
+            vim.g.user_emmet_leader_key = "<C-Y>"
+        end
    }
 }
