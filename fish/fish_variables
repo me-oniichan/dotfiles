@@ -1,7 +1,8 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR DEBUG:\x1d
 SETUVAR --export GCM_CREDENTIAL_STORE:gpg
-SETUVAR --export GPG_TTY:/dev/pts/1
+SETUVAR --export GPG_TTY:/dev/pts/0
 SETUVAR GTK_DEBUG:interactive\x1ewaybar
 SETUVAR WLR_NO_HARDWARE_CURSORS:1
 SETUVAR __fish_initialized:3400

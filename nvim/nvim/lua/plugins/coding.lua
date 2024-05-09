@@ -43,5 +43,15 @@ return {
         config = function ()
             vim.g.user_emmet_leader_key = "<C-Y>"
         end
-   }
+   },
+     {
+        "github/copilot.vim",
+        lazy = false,
+        config = function()
+          -- Mapping tab is already used by lsp
+          vim.g.copilot_assume_mapped = true;
+          -- The mapping is set to other key, see custom/lua/mappings
+          -- or run <leader>ch to see copilot mapping section
+        end
+     },
 }

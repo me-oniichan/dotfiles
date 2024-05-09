@@ -31,6 +31,7 @@ map("v", "J", ":m'>+1<CR>gv=gv", {}) -- down
 
 map("n", "<C-q>", ":tabclose<CR>", {})
 map("i", "<C-BS>", "<C-w>", {})
-map("n", "<M-]>", "gt", {})
-map("n", "<M-[>", "gT", {})
+map("n", "<C-]>", "gt", {})
+map("n", "<C-[>", "gT", {})
 map("n", "<C-t>", ":NvimTreeToggle<CR>", {})
+
