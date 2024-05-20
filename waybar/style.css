@@ -72,6 +72,7 @@ window#waybar.hidden {
   background-color: #23152e;    
   border-top: 1px solid alpha(#f1cdf4, 0.8);
   border-bottom: 1px solid alpha(#f1cdf4, 0.8);
+  transition: background-color 0.1s;
 }
 
 #custom-power {
@@ -81,18 +82,34 @@ window#waybar.hidden {
 #custom-logo {
   padding-right: 7px;
   padding-left: 7px;
-  margin-left: 5px;
+  margin: 5px 2px 5px 5px;
   font-size: 18px;
-  border-radius: 8px 0px 0px 8px;
+  border-radius: 8px 8px 8px 8px;
   color: #1793d1;
+}
+
+#custom-logo:hover {
+  background-color: #1793d1;
+  color: #181825;
+  transition: background-color 0.5s;
 }
 
 #bluetooth{
     color: #66aaff;
 }
 
+#bluetooth:hover{
+    background-color: #66aaff;
+    color: #181825;
+}
+
 #memory {
   color: #fab387;
+}
+
+#memory:hover {
+    background-color: #fab387;
+    color: #181825;
 }
 
 @keyframes blink {
@@ -128,17 +145,36 @@ window#waybar.hidden {
 #temperature {
   color: #f38ba8;
 }
+#temperature:hover {
+  background-color: #f38ba8;
+  color: #181825;
+}
 
 #backlight {
   color: #fab387;
+}
+
+#backlight:hover {
+  background-color: #fab387;
+  color: #181825;
 }
 
 #custom-wl-gammarelay-temperature{
   color: #f38ba8;
 }
 
+#custom-wl-gammarelay-temperature:hover{
+  background-color: #f38ba8;
+  color: #181825;
+}
+
 #pulseaudio {
   color: #f9e2af;
+}
+
+#pulseaudio:hover {
+  background-color: #f9e2af;
+  color: #181825;
 }
 
 #network {
@@ -146,17 +182,37 @@ window#waybar.hidden {
   padding-right: 17px;
 }
 
+#network:hover {
+  background-color: #94e2d5;
+  color: #181825;
+}
+
 #clock {
   font-family: JetBrainsMono Nerd Font;
   color: #f4bfff;
+}
+
+#clock:hover {
+  background-color: #f4bfff;
+  color: #181825;
 }
 
 #custom-power {
   background-color: #f2cdcd;
 }
 
+#custom-power:hover {
+  background-color: #f2cdcd;
+  color: #181825;
+}
+
 #cpu {
   color: #f9e2af; 
+}
+
+#cpu:hover {
+  background-color: #f9e2af;
+  color: #181825;
 }
 
 tooltip {
@@ -171,19 +227,6 @@ background-color: #131822;
 }
 
 
-#memory:hover,
-#custom-power:hover,
-#battery:hover,
-#backlight:hover,
-#pulseaudio:hover,
-#network:hover,
-#clock:hover,
-#cpu:hover,
-#temperature:hover,
-#custom-wl-gammarelay-temperature:hover{
-  border: 1px solid white;
-  color: white;
-}
 
 #mpris{
 }
