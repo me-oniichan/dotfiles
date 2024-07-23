@@ -1,9 +1,11 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export AMD_VULKAN_ICD:RADV
 SETUVAR DEBUG:\x1d
 SETUVAR --export GCM_CREDENTIAL_STORE:gpg
 SETUVAR --export GPG_TTY:/dev/pts/0
 SETUVAR GTK_DEBUG:interactive\x1ewaybar
+SETUVAR --export VK_ICD_FILENAMES:/usr/share/vulkan/icd\x2ed/nvidia_icd\x2ejson
 SETUVAR WLR_NO_HARDWARE_CURSORS:1
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:BD93F9
@@ -45,3 +47,4 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
+SETUVAR fish_user_paths:/home/onii/\x2elocal/bin
