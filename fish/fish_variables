@@ -5,7 +5,7 @@ SETUVAR DEBUG:\x1d
 SETUVAR --export GCM_CREDENTIAL_STORE:gpg
 SETUVAR --export GPG_TTY:/dev/pts/0
 SETUVAR GTK_DEBUG:interactive\x1ewaybar
-SETUVAR --export VK_ICD_FILENAMES:/usr/share/vulkan/icd\x2ed/nvidia_icd\x2ejson
+SETUVAR --export VK_ICD_FILENAMES:/usr/share/vulkan/icd\x2ed/radeon_icd\x2ex86_64\x2ejson
 SETUVAR WLR_NO_HARDWARE_CURSORS:1
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:BD93F9
