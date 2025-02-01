@@ -61,6 +61,7 @@ window#waybar.hidden {
 #pulseaudio,
 #network,
 #clock,
+#disk,
 #cpu,
 #temperature,
 #custom-wl-gammarelay-temperature,
@@ -197,6 +198,10 @@ window#waybar.hidden {
   color: #181825;
 }
 
+#disk {
+  font-family: JetBrainsMono Nerd Font;
+  color: #f4bfff;
+}
 #custom-power {
   background-color: #f2cdcd;
 }

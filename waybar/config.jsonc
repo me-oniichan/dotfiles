@@ -6,6 +6,7 @@
         "cpu",
         "memory",
         "temperature",
+        "disk",
         "hyprland/workspaces"
     ],
     "modules-center": [
@@ -18,7 +19,7 @@
         "backlight",
         "custom/wl-gammarelay-temperature",
         "clock",
-        "battery",
+        "battery"
     ],
     "hyprland/workspaces": {
         "on-click": "activate",
@@ -51,8 +52,23 @@
     },
     "clock": {
         "tooltip-format": "<tt>{calendar}</tt>",
-        "format-alt": " {:%a, %d-%b-%Y}",
-        "format": "  {:%I:%M %p}"
+        "format": "{:%I:%M%p | %d-%b-%Y}",
+        "calendar":{
+            "mode-mon-col": 3,
+            "on-scroll": 1,
+            "format": {
+                "months":   "<span color='#ffead3'><b>{}</b></span>",
+                "days":     "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks":    "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today":    "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions":  {
+            "on-click-right": "mode",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
     },
     "network": {
         "format-wifi" : "{icon} ↓{bandwidthDownBytes} ↑{bandwidthUpBytes}",
@@ -146,7 +162,7 @@
         "max-length": 10
   },
    "temperature": {
-      "format": "{temperatureC}°C "
+      "format": " {temperatureC}°C"
   },
     "bluetooth": {
         "format" : "",
@@ -166,4 +182,10 @@
         "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n +100",
         "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -100"
     },
+    "disk": {
+        "interval": 30,
+        "format": "🖴 {free}",
+        "unit": "GB"
+	// 0.25 GB out of 2000.00 GB available. Alternatively 241.3MiB out of 1.9TiB available.
+    }
 }
